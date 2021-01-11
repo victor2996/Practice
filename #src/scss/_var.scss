@@ -1,0 +1,23 @@
+// $font-bai: 'Bai Jamjuree', sans-serif;
+// $font-pop: 'Poppins', sans-serif;
+// $font-rob: 'Roboto', sans-serif;
+
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin justify-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@function bg-darken($value) {
+  @return darken($value, 15%);
+}
